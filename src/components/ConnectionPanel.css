@@ -1,0 +1,116 @@
+.conn-error {
+  margin: 0.5rem 0 0;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.8rem;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+}
+
+.conn-panel {
+  width: 100%;
+  max-width: min(90vw, 720px);
+  margin: 0 auto 1rem;
+  padding: 1rem 1.1rem;
+  background: #ffffffcc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 6%);
+}
+
+.conn-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.conn-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+
+.conn-dot--on {
+  background: #22c55e;
+  box-shadow: 0 0 0 3px rgb(34 197 94 / 25%);
+}
+
+.conn-dot--off {
+  background: #ef4444;
+}
+
+.conn-status {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.conn-detail {
+  margin: 0.35rem 0;
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.conn-muted {
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.conn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.conn-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: #6366f1;
+  color: #fff;
+}
+
+.conn-btn:hover {
+  filter: brightness(1.05);
+}
+
+.conn-btn--ghost {
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+.conn-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.conn-input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.conn-code {
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.conn-log {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: #475569;
+}
