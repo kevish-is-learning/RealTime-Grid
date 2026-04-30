@@ -2,12 +2,12 @@ import { io, type Socket } from "socket.io-client";
 
 /**
  * Where Socket.IO connects:
- * - If `VITE_SOCKET_URL` is set → use that (direct to API; you must allow CORS on the server).
+ * - If `VITE_BACKEND_URL` is set → use that (direct to API; you must allow CORS on the server).
  * - Otherwise use the current page origin. In `npm run dev` that is Vite, which proxies
  *   `/socket.io` to the backend (see `vite.config.ts`) so the app works without CORS issues.
  */
 function resolveSocketBaseUrl(): string {
-  const explicit = import.meta.env.VITE_SOCKET_URL;
+  const explicit = import.meta.env.VITE_BACKEND_URL;
   if (typeof explicit === "string" && explicit.trim().length > 0) {
     return explicit.trim();
   }
